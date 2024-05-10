@@ -1,14 +1,7 @@
 <template>
+    <NavBar></NavBar>
     <section>
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="about">About</NuxtLink>
-        <NuxtLink to="contact">Contact</NuxtLink>
-    </section>
-    <section>
-        <h2>Contact</h2>
-        <div>
-            <h1>Under Development... Go away! :)</h1>
-        </div>
+        <h2>{{ $t('navbar.contact') }}</h2>
     </section>
     <section>
         <div>
@@ -24,10 +17,12 @@
 </template>
 <script setup>
 import { ref } from "vue";
+import NavBar from '~/components/NavBar.vue';
 let email;
 let message;
 let postEndpoint = "https://api.michaelmcgettrick.com/contact";
 let responseMessage = ref("");
+
 
 let onSubmit = async (event) => {
     console.log("email", email);
