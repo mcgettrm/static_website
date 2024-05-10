@@ -25,8 +25,6 @@ let responseMessage = ref("");
 
 
 let onSubmit = async (event) => {
-    console.log("email", email);
-    console.log("message", message);
     responseMessage.value = "Sending Email...";
 
     if (email && message) {
