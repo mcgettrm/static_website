@@ -2,5 +2,11 @@
     "navbar.home": "主页",
     "navbar.about": "关于",
     "navbar.contact": "联系",
+    "navbar.settings": "设置",
     "page.home.coming_soon": "正在开发中...走开！ :)",
+    "page.settings.select_language": "语言",
+    "page.contact.get_in_touch": "想联系我吗?",
+    "page.contact.email": "输入你的电子邮箱地址",
+    "page.contact.your_message": "输入您的留言",
+    "page.contact.submit": "发送",
 }

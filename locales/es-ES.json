@@ -2,5 +2,11 @@
     "navbar.home": "Inicio",
     "navbar.about": "Acerca De",
     "navbar.contact": "Contactar",
+    "navbar.settings": "Ajustes",
     "page.home.coming_soon": "En desarrollo... ¡Vete! :)",
+    "page.settings.select_language": "Seleccionar Languaje",
+    "page.contact.get_in_touch": "¿Quieres conectarte conmigo?",
+    "page.contact.email": "Entrar correo electronico",
+    "page.contact.your_message": "Entrar mensaje",
+    "page.contact.submit": "Enviar",
 }

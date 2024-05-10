@@ -5,11 +5,11 @@
     </section>
     <section>
         <div>
-            <h2>Wanna get in touch?</h2>
+            <h2>{{ $t('page.contact.get_in_touch') }}</h2>
             <form @submit.prevent="onSubmit">
-                <input v-model="email" name="email" type="text" placeholder="Your email" />
-                <input v-model="message" name="message" type="text" placeholder="Put your message here" />
-                <input name="submitButton" type="submit" value="submit" />
+                <input v-model="email" name="email" type="text" :placeholder="$t('page.contact.email')" />
+                <input v-model="message" name="message" type="text" :placeholder="$t('page.contact.your_message')" />
+                <input name="submitButton" type="submit" :value="$t('page.contact.submit')" />
             </form>
             <p>{{ responseMessage }}</p>
         </div>
@@ -40,11 +40,9 @@ let onSubmit = async (event) => {
                     message: message,
                 }),
             });
-            console.log('json result:', response);
             success = response.ok;
 
         } catch (error) {
-            console.log('error: ', error);
             success = false;
         }
 
